@@ -1,0 +1,3 @@
+include ':data-room'
+include ':app'
+rootProject.name = "MyMoney"

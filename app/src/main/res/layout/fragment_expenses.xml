@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.expenses.ExpensesFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_type"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/type_button_style"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/layout_expression"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/type_header"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/text_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/type_transport"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fillColor="@android:color/white"
+            android:src="@drawable/car" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_expression"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/text_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/text_expression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            android:hint="0"
+            android:textColor="@color/red"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="0"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/goods_name"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:columnCount="5"
+        android:orientation="vertical"
+        android:rowCount="4"
+        app:layout_constraintBottom_toTopOf="@+id/text_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_division"
+            style="@style/calc_image_buttons"
+            android:text="@string/division" />
+
+        <Button
+            android:id="@+id/button_multiply"
+            style="@style/calc_image_buttons"
+            android:text="@string/multiply" />
+
+        <Button
+            android:id="@+id/button_minus"
+            style="@style/calc_image_buttons"
+            android:text="@string/subtraction" />
+
+        <Button
+            android:id="@+id/button_plus"
+            style="@style/calc_image_buttons"
+            android:text="@string/plus" />
+
+        <Button
+            android:id="@+id/button_seven"
+            style="@style/calc_buttons"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/button_four"
+            style="@style/calc_buttons"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/button_one"
+            style="@style/calc_buttons"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/button_currency"
+            style="@style/calc_buttons"
+            android:text="@string/euro_currency" />
+
+        <Button
+            android:id="@+id/button_eight"
+            style="@style/calc_buttons"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/button_five"
+            style="@style/calc_buttons"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/button_two"
+            style="@style/calc_buttons"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/button_zero"
+            style="@style/calc_buttons"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/button_nine"
+            style="@style/calc_buttons"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/button_six"
+            style="@style/calc_buttons"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/button_three"
+            style="@style/calc_buttons"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/button_dot"
+            style="@style/calc_buttons"
+            android:text="@string/dot" />
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            style="@style/calc_image_buttons"
+            android:src="@drawable/baseline_backspace_24" />
+
+        <ImageButton
+            android:id="@+id/button_choose_date"
+            style="@style/calc_image_buttons"
+            android:src="@drawable/baseline_insert_invitation_24" />
+
+        <ImageButton
+            android:id="@+id/button_done"
+            style="@style/calc_image_buttons"
+            android:layout_rowSpan="2"
+            android:background="@color/blue"
+            android:src="@drawable/check" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Date"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

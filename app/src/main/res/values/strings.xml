@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyMoney</string>
+    <string name="main_month">Month</string>
+    <string name="title_food">Food</string>
+    <string name="no_money_value">Empty</string>
+    <string name="household_goods">Shop</string>
+    <string name="bills">Bills</string>
+    <string name="other">Other</string>
+    <string name="choose_date">Date</string>
+    <string name="choose_type_purchase">Choose expenses type</string>
+    <string name="enter_purchase_name">Enter expenses name</string>
+    <string name="goods_name">Set name...</string>
+    <string name="goods_type">Type</string>
+    <string name="goods_cost">€</string>
+    <string name="empty_table">Empty table</string>
+    <string name="type_transport">Transport</string>
+    <string name="type_header">Category</string>
+    <string name="division">÷</string>
+    <string name="multiply">×</string>
+    <string name="subtraction">-</string>
+    <string name="plus">+</string>
+    <string name="seven">7</string>
+    <string name="four">4</string>
+    <string name="one">1</string>
+    <string name="euro_currency">€</string>
+    <string name="eight">8</string>
+    <string name="five">5</string>
+    <string name="two">2</string>
+    <string name="zero">0</string>
+    <string name="nine">9</string>
+    <string name="six">6</string>
+    <string name="three">3</string>
+    <string name="dot">.</string>
+    <string name="total_expenses">0</string>
+    <string name="categories">Categories</string>
+    <string name="transactions">Transactions</string>
+    <string-array name="expenses_type_array">
+        <item>Food</item>
+        <item>Bills</item>
+        <item>Transport</item>
+        <item>Shop</item>
+        <item>Else</item>
+    </string-array>
+</resources>
