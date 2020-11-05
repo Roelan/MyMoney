@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     public BottomNavigationView bottomNavigation;
     private BottomNavigationView.OnNavigationItemSelectedListener menuClickListener;
-    private @IdRes int selectedId; //stores which tab we are on so we don't recreate tons of fragments
+    private @IdRes int selectedId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

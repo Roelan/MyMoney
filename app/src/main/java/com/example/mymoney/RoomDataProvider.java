@@ -17,7 +17,7 @@ import javax.inject.Inject;
 
 public class RoomDataProvider {
 
-    private static final String TAG = "DashboardViewModel";
+    private static final String TAG = "RoomDataProvider";
 
     @Inject
     public ExpensesRepository repository;
